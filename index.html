@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgroumd Color Changer</title>
+   <style>
+    body{
+        padding: 50px 100px;
+        margin: 0px;
+        
+    }
+    h1{
+        color: blue;
+    }
+    #switch{
+        text-align: right;
+        position: relative;
+       left: 6px;
+       width: 700px;
+       height: 700px;
+       bottom: 60px;
+        
+    }
+    .btn{
+        height: 40px;
+        width: 40px;
+        display: inline-block;
+        border-radius: 50px;
+        border:  2px solid black;
+        cursor: pointer;
+    }
+  
+    #white{
+        background-color: white;
+    }
+    #skyblue{
+        background-color: skyblue;
+    }
+    #yellow{
+        background-color: rgb(246, 246, 38);
+    }
+    #pink{
+        background-color: pink;
+    }
+    #black
+    {
+        background-color: black;
+    }
+   </style>
+    
+      
+</head>
+<body><h1>Click On Any Button  ==></h1>
+     <div id="switch">
+         <span class="btn" id="white"    onclick="Bg('white')"></span>
+         <span class="btn" id="skyblue"  onclick="Bg('skyblue')"></span>
+         <span class="btn" id="yellow"   onclick="Bg('yellow')"></span>
+         <span class="btn" id="pink"     onclick="Bg('pink')"></span>
+         <span class="btn" id="black"    onclick="Bg('black')"></span>
+        
+
+     </div>
+   <script>
+             function Bg(color){
+                document.body.style.backgroundColor=color;}
+
+  </script>
+</body>
+</html>
